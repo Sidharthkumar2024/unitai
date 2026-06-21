@@ -1,6 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4209],{1009:(e,t,l)=>{"use strict";l.r(t),l.d(t,{default:()=>a});var s=l(95155);function a(){return(0,s.jsxs)("div",{className:"fixed inset-0 z-50 flex flex-col items-center justify-center bg-slate-950",children:[(0,s.jsx)("style",{children:`
-        @keyframes omega-load-bar {
-          0%   { left: -40%; }
-          100% { left: 100%; }
-        }
-      `}),(0,s.jsx)("div",{className:"w-12 h-12 bg-gradient-to-tr from-[#FF4F12] to-[#FF2E00] rounded-xl flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-orange-500/20",children:"Ω"}),(0,s.jsx)("div",{className:"mt-6 relative h-0.5 w-24 bg-slate-800 rounded-full overflow-hidden",children:(0,s.jsx)("div",{className:"absolute top-0 h-full w-2/5 bg-gradient-to-r from-orange-500 to-red-500 rounded-full",style:{animation:"omega-load-bar 1.2s ease-in-out infinite"}})})]})}},97055:(e,t,l)=>{Promise.resolve().then(l.bind(l,1009))}},e=>{e.O(0,[8441,3794,7358],()=>e(e.s=97055)),_N_E=e.O()}]);
