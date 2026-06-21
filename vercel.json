@@ -1,5 +1,19 @@
 {
   "framework": null,
   "buildCommand": null,
-  "outputDirectory": "."
+  "outputDirectory": ".",
+  "rewrites": [
+    {
+      "source": "/_next/:match*",
+      "destination": "https://omega.kesarcloud.in/_next/:match*"
+    },
+    {
+      "source": "/(.*\\\\.png)",
+      "destination": "https://omega.kesarcloud.in/$1"
+    },
+    {
+      "source": "/(.*\\\\.ico)",
+      "destination": "https://omega.kesarcloud.in/$1"
+    }
+  ]
 }
