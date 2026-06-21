@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0b0f19" />
+  <title>Pricing — UnityAI</title>
+  <meta name="description" content="Simple, transparent pricing for UnityAI proxy gateway subscriptions, token packs, and pay-as-you-go frontier models." />
+  <meta name="keywords" content="UnityAI pricing, API pricing, token cost, pay-as-you-go AI, LLM gateway cost" />
+  <meta name="application-name" content="UnityAI" />
+  <link rel="canonical" href="https://unityai.cloud/pricing.html" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://unityai.cloud/pricing.html" />
+  <meta property="og:title" content="Pricing — UnityAI" />
+  <meta property="og:description" content="Simple, transparent pricing for UnityAI proxy gateway subscriptions, token packs, and pay-as-you-go frontier models." />
+  <meta property="og:site_name" content="UnityAI" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:url" content="https://unityai.cloud/pricing.html" />
+  <meta property="twitter:title" content="Pricing — UnityAI" />
+  <meta property="twitter:description" content="Simple, transparent pricing for UnityAI proxy gateway subscriptions, token packs, and pay-as-you-go frontier models." />
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet" />
+  
+  <!-- Theme script -->
+  <script>
+    try {
+      const stored = localStorage.getItem('theme');
+      if (stored === 'dark' || (!stored && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body class="antialiased">
+  
+  <!-- Navigation Header -->
+  <header>
+    <div class="container header-container">
+      <a class="logo-link" href="index.html">
+        <svg class="logo-icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logo-gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#6366f1" />
+              <stop offset="100%" stop-color="#06b6d4" />
+            </linearGradient>
+          </defs>
+          <path d="M8 8V18C8 22.4183 11.5817 26 16 26C20.4183 26 24 22.4183 24 18V8" stroke="url(#logo-gradient)" stroke-width="4" stroke-linecap="round"/>
+          <path d="M16 12V20" stroke="url(#logo-gradient)" stroke-width="4" stroke-linecap="round"/>
+          <circle cx="16" cy="8" r="3" fill="#06b6d4"/>
+        </svg>
+        <span class="logo-text">UnityAI</span>
+      </a>
+      <nav class="desktop-nav">
+        <a href="index.html#features">Features</a>
+        <a class="active" href="pricing.html">Pricing</a>
+        <a href="index.html#architecture">Runtime</a>
+        <a href="documentation.html">Docs</a>
+        <a href="status.html">Status</a>
+        <button class="btn-theme-switcher" aria-label="Toggle theme">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+        </button>
+        <a class="btn btn-secondary" style="padding: 0.375rem 1rem;" href="login.html">Login</a>
+      </nav>
+      <button class="btn-mobile-menu" aria-label="Open menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu" aria-hidden="true"><path d="M4 5h16"></path><path d="M4 12h16"></path><path d="M4 19h16"></path></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Panel -->
+  <div class="mobile-nav-panel">
+    <a href="index.html#features">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="index.html#architecture">Runtime</a>
+    <a href="documentation.html">Docs</a>
+    <a href="status.html">Status</a>
+    <a href="login.html">Login</a>
+  </div>
+
+  <main id="main-content">
+    
+    <!-- Title Header -->
+    <section class="hero" style="padding-bottom: 2rem;">
+      <div class="container">
+        <h1>Simple, <span class="text-gradient">Transparent</span> Pricing</h1>
+        <p class="hero-description" style="margin-top: 1rem;">No hidden fees. No surprises. Choose the plan that fits your needs — from startups to enterprise.</p>
+      </div>
+    </section>
+
+    <!-- Subscriptions Section -->
+    <section class="features-section" style="padding-top: 2rem; padding-bottom: 4rem;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 3.5rem;">
+          <div style="margin-bottom: 0.5rem;"><span class="badge-pool">Coding Plans</span></div>
+          <h2 style="font-size: 1.75rem;">Subscription Packages</h2>
+          <p style="font-size: 0.9375rem;">Monthly subscription with daily token limits. Best for consistent, predictable usage.</p>
+        </div>
+        
+        <div class="grid grid-cols-4">
+          <!-- Starter -->
+          <div class="card flex flex-col justify-between" style="padding: 2rem;">
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Starter</h3>
+              <div class="flex items-baseline" style="gap: 0.25rem; margin-bottom: 0.25rem;">
+                <span class="text-gradient" style="font-size: 2.25rem; font-weight: 900;">₹3,300</span>
+                <span style="font-size: 0.875rem; color: var(--text-muted);">/mo</span>
+              </div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 1.5rem;">1 Billion tokens/month</p>
+              
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  All public models
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  1M context window
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  ~33M daily limit
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  Standard support
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-secondary" style="width: 100%;" href="login.html">Get Started</a>
+          </div>
+
+          <!-- Pro (Featured) -->
+          <div class="card flex flex-col justify-between" style="padding: 2rem; border-color: var(--primary); box-shadow: var(--shadow-glow); position: relative;">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white">Most Popular</div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Pro</h3>
+              <div class="flex items-baseline" style="gap: 0.25rem; margin-bottom: 0.25rem;">
+                <span class="text-gradient" style="font-size: 2.25rem; font-weight: 900;">₹5,500</span>
+                <span style="font-size: 0.875rem; color: var(--text-muted);">/mo</span>
+              </div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 1.5rem;">2.5 Billion tokens/month</p>
+              
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  All public models
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  1M context window
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  ~83M daily limit
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  Priority support
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-primary" style="width: 100%;" href="login.html">Get Started</a>
+          </div>
+
+          <!-- Enterprise -->
+          <div class="card flex flex-col justify-between" style="padding: 2rem;">
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Enterprise</h3>
+              <div class="flex items-baseline" style="gap: 0.25rem; margin-bottom: 0.25rem;">
+                <span class="text-gradient" style="font-size: 2.25rem; font-weight: 900;">₹11,000</span>
+                <span style="font-size: 0.875rem; color: var(--text-muted);">/mo</span>
+              </div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 1.5rem;">6 Billion tokens/month</p>
+              
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  All public models
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  1M context window
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  ~200M daily limit
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  Dedicated support
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-secondary" style="width: 100%;" href="login.html">Get Started</a>
+          </div>
+
+          <!-- Startup -->
+          <div class="card flex flex-col justify-between" style="padding: 2rem;">
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">Startup</h3>
+              <div class="flex items-baseline" style="gap: 0.25rem; margin-bottom: 0.25rem;">
+                <span class="text-gradient" style="font-size: 2.25rem; font-weight: 900;">₹16,500</span>
+                <span style="font-size: 0.875rem; color: var(--text-muted);">/mo</span>
+              </div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 1.5rem;">10 Billion tokens/month</p>
+              
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  All public models
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  1M context window
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  ~333M daily limit
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  Priority + Slack support
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-secondary" style="width: 100%;" href="login.html">Get Started</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bulk Packs Section -->
+    <section class="features-section" style="padding-top: 4rem; padding-bottom: 4rem; background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header" style="margin-bottom: 3.5rem;">
+          <div style="margin-bottom: 0.5rem;"><span class="badge-pool">Bulk Token Packs</span></div>
+          <h2 style="font-size: 1.75rem;">One-Time Purchases</h2>
+          <p style="font-size: 0.9375rem;">One-time purchase. No expiry. No daily limits. Use whenever you need.</p>
+        </div>
+
+        <div class="grid grid-cols-4">
+          <!-- 250M Pack -->
+          <div class="card flex flex-col justify-between" style="padding: 2rem; background-color: var(--bg-primary);">
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">250M Pack</h3>
+              <div class="flex items-baseline" style="gap: 0.25rem; margin-bottom: 0.25rem;">
+                <span class="text-gradient" style="font-size: 2.25rem; font-weight: 900;">₹1,980</span>
+                <span style="font-size: 0.875rem; color: var(--text-muted);">/once</span>
+              </div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 1.5rem;">250 Million tokens</p>
+              
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  Never expires
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  No daily limits
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  All public models
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-secondary" style="width: 100%;" href="login.html">Buy Pack</a>
+          </div>
+
+          <!-- 500M Pack -->
+          <div class="card flex flex-col justify-between" style="padding: 2rem; background-color: var(--bg-primary);">
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">500M Pack</h3>
+              <div class="flex items-baseline" style="gap: 0.25rem; margin-bottom: 0.25rem;">
+                <span class="text-gradient" style="font-size: 2.25rem; font-weight: 900;">₹3,300</span>
+                <span style="font-size: 0.875rem; color: var(--text-muted);">/once</span>
+              </div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 1.5rem;">500 Million tokens</p>
+              
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  Never expires
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  No daily limits
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  All public models
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-secondary" style="width: 100%;" href="login.html">Buy Pack</a>
+          </div>
+
+          <!-- 1B Pack (Featured) -->
+          <div class="card flex flex-col justify-between" style="padding: 2rem; background-color: var(--bg-primary); border-color: var(--primary); box-shadow: var(--shadow-glow); position: relative;">
+            <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-indigo-500 to-cyan-500 px-4 py-1 text-[10px] font-extrabold uppercase tracking-wider text-white">Most Popular</div>
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">1B Pack</h3>
+              <div class="flex items-baseline" style="gap: 0.25rem; margin-bottom: 0.25rem;">
+                <span class="text-gradient" style="font-size: 2.25rem; font-weight: 900;">₹5,500</span>
+                <span style="font-size: 0.875rem; color: var(--text-muted);">/once</span>
+              </div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 1.5rem;">1 Billion tokens</p>
+              
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  Never expires
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  No daily limits
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  Best value for teams
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-primary" style="width: 100%;" href="login.html">Buy Pack</a>
+          </div>
+
+          <!-- 2.5B Pack -->
+          <div class="card flex flex-col justify-between" style="padding: 2rem; background-color: var(--bg-primary);">
+            <div>
+              <h3 style="font-size: 1.25rem; margin-bottom: 0.5rem;">2.5B Pack</h3>
+              <div class="flex items-baseline" style="gap: 0.25rem; margin-bottom: 0.25rem;">
+                <span class="text-gradient" style="font-size: 2.25rem; font-weight: 900;">₹11,000</span>
+                <span style="font-size: 0.875rem; color: var(--text-muted);">/once</span>
+              </div>
+              <p style="font-size: 0.8125rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 1.5rem;">2.5 Billion tokens</p>
+              
+              <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 2rem;">
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  Never expires
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  No daily limits
+                </li>
+                <li class="flex items-start" style="gap: 0.5rem; font-size: 0.8125rem; color: var(--text-secondary);">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check" style="color:var(--primary); margin-top: 0.125rem; flex-shrink:0;"><path d="M20 6 9 17l-5-5"></path></svg>
+                  Maximum savings
+                </li>
+              </ul>
+            </div>
+            <a class="btn btn-secondary" style="width: 100%;" href="login.html">Buy Pack</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pay-as-you-go Section -->
+    <section class="features-section" style="padding-top: 5rem; padding-bottom: 5rem;">
+      <div class="container" style="max-width: 800px;">
+        <div class="section-header" style="margin-bottom: 3.5rem;">
+          <div style="margin-bottom: 0.5rem;"><span class="badge-pool">API Pay-as-you-Go</span></div>
+          <h2 style="font-size: 1.75rem;">Flexible Rates</h2>
+          <p style="font-size: 0.9375rem;">Pay only for what you use. Top up credits anytime. No monthly minimums.</p>
+        </div>
+
+        <div class="card usage-table-card" style="margin-bottom: 2rem;">
+          <table class="status-table">
+            <thead>
+              <tr>
+                <th>Token Type</th>
+                <th>USD Rates</th>
+                <th>≈ INR Rates</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Input (prompt)</strong></td>
+                <td><span class="text-gradient" style="font-family: var(--font-display); font-weight: 800; font-size: 1.125rem;">$1.10</span></td>
+                <td>₹93.50</td>
+                <td>Per million tokens sent</td>
+              </tr>
+              <tr>
+                <td><strong>Output (completion)</strong></td>
+                <td><span class="text-gradient" style="font-family: var(--font-display); font-weight: 800; font-size: 1.125rem;">$3.30</span></td>
+                <td>₹280.50</td>
+                <td>Per million tokens generated</td>
+              </tr>
+              <tr>
+                <td><strong>Cache Read</strong></td>
+                <td><span class="text-gradient" style="font-family: var(--font-display); font-weight: 800; font-size: 1.125rem;">$0.11</span></td>
+                <td>₹9.35</td>
+                <td>Per million tokens served from cache</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="border-top: 1px solid var(--border-color); padding: 1rem 1.25rem; font-size: 0.75rem; color: var(--text-muted); background-color: var(--bg-secondary);">
+            * INR conversion at ₹85/USD. Actual charged in INR. Minimum top-up: ₹1,000.
+          </div>
+        </div>
+
+        <div class="card" style="padding: 1.75rem;">
+          <h3 style="font-size: 1rem; margin-bottom: 1rem;">How it works:</h3>
+          <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+            <li class="flex items-start" style="gap: 0.5rem;">
+              <span style="color:var(--primary); font-weight:bold;">•</span>
+              Add credits to your account (minimum top-up ₹1,000).
+            </li>
+            <li class="flex items-start" style="gap: 0.5rem;">
+              <span style="color:var(--primary); font-weight:bold;">•</span>
+              Every API request deducts credits based on exact token usage.
+            </li>
+            <li class="flex items-start" style="gap: 0.5rem;">
+              <span style="color:var(--primary); font-weight:bold;">•</span>
+              Credits never expire — they roll over forever.
+            </li>
+            <li class="flex items-start" style="gap: 0.5rem;">
+              <span style="color:var(--primary); font-weight:bold;">•</span>
+              Track usage metrics in real-time from your dashboard.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Accordion -->
+    <section class="faq-section" style="background-color: var(--bg-secondary); border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Pricing <span class="text-gradient">questions</span></h2>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Do tokens expire?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Token packs never expire. Coding plan tokens reset monthly. API credits roll over forever.
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Which models are included?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                All plans include access to UnityAI Plus, Claude Opus 4.6/4.7/4.8, GPT 5.5, Claude Sonnet 4.6, Gemini 3.1 Pro, DeepSeek V4 Pro, and Qwen 3.7 Plus.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Can I upgrade or downgrade?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Yes. You can switch plans anytime. Token packs can be topped up as needed.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>What is the context window?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                All models support up to 1 million tokens of context window.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>Is there a free trial?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Contact us for a 1M token trial pack to test the platform.
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-trigger">
+              <span>How do I get started?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg>
+            </button>
+            <div class="faq-content">
+              <div class="faq-content-inner">
+                Create an account, choose your plan, get your API key, and start using the OpenAI or Anthropic compatible endpoints.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA Card -->
+    <section class="cta-bottom" style="padding: 7rem 0;">
+      <div class="container" style="max-width: 600px;">
+        <div class="card" style="padding: 3rem 2rem; background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary)); border-color: rgba(var(--primary-rgb), 0.15); box-shadow: var(--shadow-glow);">
+          <h2 style="font-size: 1.875rem; margin-bottom: 0.5rem;">Ready to get started?</h2>
+          <p style="font-size: 0.9375rem; color: var(--text-muted); margin-bottom: 2rem;">Create your account and get your API key in under 2 minutes.</p>
+          <a class="btn btn-primary" href="login.html">
+            Get Started Free
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo-link" href="index.html">
+            <svg class="logo-icon-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="footer-logo-gradient" x1="0" y1="0" x2="32" y2="32" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#6366f1" />
+                  <stop offset="100%" stop-color="#06b6d4" />
+                </linearGradient>
+              </defs>
+              <path d="M8 8V18C8 22.4183 11.5817 26 16 26C20.4183 26 24 22.4183 24 18V8" stroke="url(#footer-logo-gradient)" stroke-width="4" stroke-linecap="round"/>
+              <path d="M16 12V20" stroke="url(#footer-logo-gradient)" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="16" cy="8" r="3" fill="#06b6d4"/>
+            </svg>
+            <span class="logo-text">UnityAI</span>
+          </a>
+          <p>Frontier coding model proxy pool by UnityAI Technologies. Clean, error-free, production-grade output without AI slop.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="index.html#">Overview</a></li>
+            <li><a href="index.html#features">Features</a></li>
+            <li><a href="index.html#architecture">Runtime</a></li>
+            <li><a href="#">Use Cases</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="documentation.html">Documentation</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">CLI Setup</a></li>
+            <li><a href="status.html">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2026 UnityAI Technologies. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-side Logic Script -->
+  <script src="main.js"></script>
+</body>
+</html>
